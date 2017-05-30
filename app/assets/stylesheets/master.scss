@@ -1,1 +1,28 @@
 @import "bootstrap";
+
+
+body {
+  background-image: image_url('pow-star.png');
+}
+
+.navbar {
+  background-image: image_url('black_mamba.png');
+  font-family: 'Josefin Slab', serif;
+  
+}
+
+.navbar-inverse .navbar-brand {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #a3a3c2;
+} 
+
+
+.navbar-toggler-icon {
+  padding-top: 60px;
+}
+
+ 
+
+
+
