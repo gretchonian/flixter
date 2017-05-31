@@ -1,9 +1,18 @@
 @import "bootstrap";
 
+a {
+  color: white;
+}
 
 body {
   background-image: image_url('body');
   font-family: 'Josefin Slab', serif;
+}
+
+.devise {
+  color: white;
+  font-family: 'Lora', serif;
+  letter-spacing: 1px;
 }
 
 .feature {
@@ -11,6 +20,7 @@ body {
   padding-right: 5%;
   color: white;
   color: #a3a3c2;
+  width: 100%;
 }
 
 .frosty {
