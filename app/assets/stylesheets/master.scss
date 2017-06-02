@@ -26,6 +26,10 @@ body {
   color: black;
 }
 
+.clr {
+  clear: both;
+}
+
 .devise {
   color: white;
   font-family: 'Lora', serif;
@@ -55,6 +59,14 @@ body {
 .frosty h2 {
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+}
+
+.help-block {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin-top: 10px;
 }
 
 .hero {
