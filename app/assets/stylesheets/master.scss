@@ -22,9 +22,11 @@ body {
   box-shadow: 10px 10px 5px grey;
 }
 
-.box a, a.btn, span.badge, {
+.box a, a.btn, span.badge, input.btn {
   color: black;
+  font-family: 'Josefin Slab', serif;
 }
+
 
 .clr {
   clear: both;
