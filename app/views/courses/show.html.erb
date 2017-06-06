@@ -1,9 +1,8 @@
 <br/>
+
 <div class="box col-10 offset-1">
   <h1 class="text-center"><%= @course.title %></h1>
   <br/>
-
-
     
   <div class="row">
     <div class="col-sm-4 col-12 text-center">
@@ -12,6 +11,7 @@
       </span></h3>
 
       <% if current_user && current_user ==@course.user %>
+        
         <br/>
        
         <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
@@ -22,5 +22,7 @@
       <%= @course.description %>
     </div>
   </div>
+
   <br/>
+  
 </div>
