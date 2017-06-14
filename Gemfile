@@ -69,3 +69,6 @@ gem "figaro"
 
 #connect carrierwave to AS3
 gem "fog-aws"
+
+#photo formatting
+gem "mini_magick"
