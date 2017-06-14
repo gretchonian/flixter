@@ -63,3 +63,9 @@ gem 'devise'
 
 #photo uploading
 gem 'carrierwave', '~>1.0'
+
+#encryption for access keys, etc.
+gem "figaro"
+
+#connect carrierwave to AS3
+gem "fog-aws"
