@@ -2,9 +2,12 @@
 
 <div class="box col-10 offset-1">
   <h1 class="text-center"><%= @course.title %></h1>
-  <%= image_tag @course.image, class: 'img-fluid' %>
+  <%= image_tag @course.image, class: 'img-fluid center-block' %>
+  
   <br/>
-    
+  <hr />
+  <br />
+
   <div class="row">
     <div class="col-sm-4 col-12 text-center">
       <h3><span class="badge badge-success">
@@ -15,32 +18,39 @@
         
         <br/>
        
-        <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
+        <%= link_to 'Admin', instructor_course_path(@course), class: 'btn btn-danger' %>
       <% end %>
     </div>
+
 
     <div class="col-sm-8 col-12">
       <%= @course.description %>
     </div>
   </div>
-
-  <div class="col-12">
-    <% @course.sections.each do |section| %>
-      <div class="section">
-        <%= section.title %>
-        <% section.lessons.each do |lesson| %>
-          <div class="lesson">
-            <%= link_to lesson_path(lesson) do %>
-              <b><%= lesson.title %></b>
-              -
-              <%= lesson.subtitle %>
+  <br/>
+  <ul>
+    <div class="col-10 offset-1">
+      <% @course.sections.each do |section| %>
+        <li>
+          <div class="section">
+            <h4><%= section.title %></h4>
+            <% section.lessons.each do |lesson| %>
+              <ul>
+                <div class="lesson">
+                  <%= link_to lesson_path(lesson) do %>
+                    <li><b><%= lesson.title %></b>
+                    -
+                    <%= lesson.subtitle %></li>
+                  <% end %>
+                </div>
+              </ul>
             <% end %>
           </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
-
-  <br/>
+          <br />
+        </li>
+      <% end %>
+    </div>
+  </ul>
+  
   
 </div>

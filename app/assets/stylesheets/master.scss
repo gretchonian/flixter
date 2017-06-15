@@ -27,6 +27,11 @@ body {
   font-family: 'Josefin Slab', serif;
 }
 
+.center-block {
+  float: none;
+  display: table;
+  margin: 0 auto;
+}
 
 .clr {
   clear: both;
