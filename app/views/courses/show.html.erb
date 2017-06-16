@@ -7,50 +7,46 @@
   <br/>
   <hr />
   <br />
+  <div class="col-10 offset-1">
+    <div class="row">
+      <div class="col-sm-4 col-12 text-center">
+        <h3><span class="badge badge-success">
+          <%= number_to_currency @course.cost %>
+        </span></h3>
 
-  <div class="row">
-    <div class="col-sm-4 col-12 text-center">
-      <h3><span class="badge badge-success">
-        <%= number_to_currency @course.cost %>
-      </span></h3>
+        <% if current_user && current_user ==@course.user %>
+          
+          <br/>
+         
+          <%= link_to 'Admin', instructor_course_path(@course), class: 'btn btn-danger' %>
+        <% end %>
+      </div>
 
-      <% if current_user && current_user ==@course.user %>
-        
-        <br/>
-       
-        <%= link_to 'Admin', instructor_course_path(@course), class: 'btn btn-danger' %>
-      <% end %>
+      <div class="col-sm-8 col-12">
+        <%= @course.description %>
+      </div>
     </div>
+    <br/>
 
-
-    <div class="col-sm-8 col-12">
-      <%= @course.description %>
-    </div>
-  </div>
-  <br/>
-  <ul>
-    <div class="col-10 offset-1">
+    <div class="row">
       <% @course.sections.each do |section| %>
-        <li>
+        <div class="col-12 col-sm-6">
           <div class="section">
-            <h4><%= section.title %></h4>
+            <h3><%= section.title %></h3>
             <% section.lessons.each do |lesson| %>
-              <ul>
-                <div class="lesson">
-                  <%= link_to lesson_path(lesson) do %>
-                    <li><b><%= lesson.title %></b>
-                    -
-                    <%= lesson.subtitle %></li>
-                  <% end %>
-                </div>
-              </ul>
+              <div class="lesson text-center">
+              <br />
+                <%= link_to lesson_path(lesson) do %>
+                  <b><%= lesson.title %></b>
+                  <br />
+                  <%= lesson.subtitle %>
+                <% end %>
+              </div>
             <% end %>
           </div>
-          <br />
-        </li>
+          <br class="clr"/>
+        </div>
       <% end %>
-    </div>
-  </ul>
-  
-  
+    </div>        
+  </div>
 </div>
