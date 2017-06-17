@@ -1,4 +1,7 @@
 <br/>
+  <% if flash[:alert] %>
+    <div class="notice"><%= flash[:alert] %></div>
+  <% end %>
 
 <div class="box col-10 offset-1">
   <h1 class="text-center"><%= @course.title %></h1>
