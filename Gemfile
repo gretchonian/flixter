@@ -76,3 +76,7 @@ gem "mini_magick"
 
 #enable video uploads to S3 storage - replaces fog-aws gem
 gem 'carrierwave-aws'
+
+#CCard payment processing - token
+gem 'stripe'
+
