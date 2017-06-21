@@ -83,3 +83,6 @@ gem 'stripe'
 # order ranking
 gem 'ranked-model'
 
+# JQuery UI
+gem 'jquery-ui-rails'
+
