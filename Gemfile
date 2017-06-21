@@ -80,3 +80,6 @@ gem 'carrierwave-aws'
 #CCard payment processing - token
 gem 'stripe'
 
+# order ranking
+gem 'ranked-model'
+
