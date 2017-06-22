@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_many :courses
   has_many :enrollments
+  has_many :enrolled_courses, through: :enrollments, source: :course
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -8,9 +9,6 @@ class User < ApplicationRecord
 
 
   def enrolled_in?(course)
-    enrolled_courses = enrollments.collect do |enrollment|
-      enrollment.course
-    end
     return enrolled_courses.include?(course)
   end
 end
