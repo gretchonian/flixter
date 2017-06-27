@@ -63,9 +63,7 @@
            <div class="col-12 col-sm-3">
             <b>About</b>
             <br/>
-            <%= link_to 'Team', '#' %>
-            <br />
-            <%= link_to 'Careers', '#' %>
+            <%= link_to 'Careers', careers_path %>
             <br />
             <%= link_to 'Privacy Policy', privacy_path %>
           </div>
@@ -85,8 +83,9 @@
             <%= link_to 'http://github.com/gretchonian' do %>
               <span class="fa fa-github-square fa-2x social-button"></span>
             <% end %>
-            <span class="fa fa-facebook-square fa-2x social-button"></span>
-            <span class="fa fa-twitter-square fa-2x social-button"></span>
+            <%= link_to 'http://linkedin.com/in/gretchen-joyce-0325a485' do %>
+              <span class="fa fa-linkedin-square fa-2x social-button"></span>
+            <% end %>
            </div>
         </div>
       </div>

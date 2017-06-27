@@ -8,4 +8,8 @@ class StaticPagesController < ApplicationController
 
   end
 
+  def careers
+
+  end
+
 end
