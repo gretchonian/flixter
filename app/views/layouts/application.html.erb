@@ -54,31 +54,28 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-3">
-            <b>Teachers</b>
+            <u>TEACHERS</u>
             <br/>
             <%= link_to 'Teach a Course', new_instructor_course_path %>
             <br />
             <%= link_to 'My Dashboard', dashboard_path %>
           </div>
-           <div class="col-12 col-sm-3">
-            <b>About</b>
+          <div class="col-12 col-sm-3">
+            <u>ABOUT</u>
             <br/>
             <%= link_to 'Careers', careers_path %>
             <br />
             <%= link_to 'Privacy Policy', privacy_path %>
           </div>
-           <div class="col-12 col-sm-3">
-            <b>Contact</b>
+          <div class="col-12 col-sm-3">
+            <u>CONTACT</u>
             <br/>
-            gretchen.zigzag@gmail.com
+            <a href="mailto:gretchen.zigzag@gmail.com" class="contact_link">gretchen.zigzag@gmail.com</a>
             <br />
-            Street Address
-            <br />
-            City, State, Zip
+            <a href=http://zigzagwebdesigns.com>zigzagwebdesigns.com</a>
           </div>
-           <div class="col-12 col-sm-3 social">
-            <b>Social</b>
-            <br/>
+          <div class="col-12 col-sm-3 social">
+            <u>SOCIAL</u>
             <br/>
             <%= link_to 'http://github.com/gretchonian' do %>
               <span class="fa fa-github-square fa-2x social-button"></span>
@@ -86,7 +83,7 @@
             <%= link_to 'http://linkedin.com/in/gretchen-joyce-0325a485' do %>
               <span class="fa fa-linkedin-square fa-2x social-button"></span>
             <% end %>
-           </div>
+          </div>
         </div>
       </div>
     </div>
