@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <div id="flex-content-container">
+    <div id="flex-container">
       <nav class="navbar navbar-inverse bg-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,17 +42,18 @@
           </ul>
         </div>
       </nav>
-      
-      <% if notice.present? %>
-        <p class="alert alert-info"><%= notice %></p>
-      <%end%>
-      <% if alert.present? %>
-        <p class="alert alert-danger"><%= alert %></p>
-      <%end%>
+      <div class="container-fluid">
+        <% if notice.present? %>
+          <p class="alert alert-info"><%= notice %></p>
+        <%end%>
+        <% if alert.present? %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <%end%>
+      </div>
       <%= yield %>
    
 
-      <div id="footer">
+      <div class="footer">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-3">

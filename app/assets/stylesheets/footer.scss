@@ -9,7 +9,7 @@ html, body {
   height: 100%;
 }
 
-#footer {
+.footer {
   padding: 10px 0px;
   position: relative;
   width: 100%;
@@ -20,12 +20,8 @@ html, body {
   margin-top: 30px;
 }
 
-#footer a {
+.footer a {
   color: white;
-}
-
-#flex-content-container {
-  flex: 1;
 }
 
 .social-button {

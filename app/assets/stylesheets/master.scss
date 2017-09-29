@@ -79,7 +79,7 @@ body {
 }
 
 .hero {
-  height: 400px;
+  min-height: 600px;
   background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
